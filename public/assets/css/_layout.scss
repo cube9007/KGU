@@ -13,14 +13,14 @@ $content-width-md: 900px;
 $content-width-sm: 600px;
 
 @mixin mask($img) {
-  -webkit-mask-image: url("../image/" + $img);
+  -webkit-mask-image: url("/assets/image/" + $img);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   -webkit-mask-position: 0 0;
 }
 
 @mixin image($img) {
-  background-image: url('../image/' + $img);
+  background-image: url('/assets/image/' + $img);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,6 +182,7 @@ $content-width-sm: 600px;
     flex-direction: column;
     width: 100%;
     max-width: 1920px;
+    gap: 80px;
     &-wrap {
       width: 100%;
       padding: 150px 100px;
@@ -189,7 +190,6 @@ $content-width-sm: 600px;
       justify-content: center;
     }
    
-    gap: 80px;
     &-top {
       display: flex;
       flex-direction: column;
@@ -239,17 +239,17 @@ $content-width-sm: 600px;
         }
         &:nth-child(1) {
           .img {
-            background-image: url('../image/section1-img1.png');
+            background-image: url('/assets/image/section1-img1.png');
           }
         }
         &:nth-child(2) {
           .img {
-            background-image: url('../image/section1-img2.png');
+            background-image: url('/assets/image/section1-img2.png');
           }
         }
         &:nth-child(3) {
           .img {
-            background-image: url('../image/section1-img3.png');
+            background-image: url('/assets/image/section1-img3.png');
           }
         }
       }

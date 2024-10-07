@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { motion } from "framer-motion"
-import './assets/css/index.scss'
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = React.useState(0);
