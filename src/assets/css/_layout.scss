@@ -1538,19 +1538,19 @@ $content-width-sm: 600px;
         justify-content: start;
       }
       &-img {
-        width: 200px;
-        height: 220px;
-        min-width: 200px;
-        min-height: 220px;
-        top: 100px;
+        width: 160px;
+        height: 176px;
+        min-width: 160px;
+        min-height: 176px;
+        top: 70px;
         &-bg {
           display: block;
           width: 100%;
-          height: calc(220px + 100px);
+          height: calc(176px + 70px);
           position: sticky;
           top: 0;
           background-color: #F6F9FF;
-          padding-top: 100px;
+          padding-top: 70px;
           z-index: 9998;
           &::before {
             content: '';
@@ -1595,14 +1595,14 @@ $content-width-sm: 600px;
     &3 {
       gap: 100px;
       &-wrap {
-        padding: 100px 20px;
+        padding: 70px 20px;
       }
       &-content {
         flex-direction: column;
         gap: 0px;
         .title {
           font-size: 7vw;
-          top: 100px;
+          top: 70px;
           height: 40px;
           width: 100%;
           background-color: white;
@@ -1610,8 +1610,8 @@ $content-width-sm: 600px;
             content: '';
             position: absolute;
             width: 100%;
-            height: 100px;
-            top: -100px;
+            height: 70px;
+            top: -70px;
             background-color: white;
           }
         }
@@ -1674,7 +1674,7 @@ $content-width-sm: 600px;
           height: 40px;
           background-color: $primary_dark;
           position: sticky;
-          top: 100px;
+          top: 70px;
           font-size: 7vw;
           width: 100%;
           min-width: fit-content;
