@@ -10,14 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const RootComponent = () => {
     useEffect(() => {
       const loadingElement = document.getElementById('loading');
+      const rootElement = document.getElementById('root');
   
       // 로딩 창을 서서히 숨기기
-      loadingElement.classList.add('hidden');
+      setTimeout(() => {
+        loadingElement.classList.add('hidden');
+        loadingElement.style.marginLeft = '2px';
+        rootElement.style.display = 'block';
+        document.body.style.overflow = 'auto';
+      }, 1000); // 1초 후에 실행
       
       // 일정 시간 후에 로딩 창을 완전히 제거하고 실제 콘텐츠를 표시
       setTimeout(() => {
         loadingElement.style.display = 'none';
-      }, 1000); // 1초 후에 실행
+      }, 2000); // 1초 후에 실행
     }, []);
   
     return <App />;

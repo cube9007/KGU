@@ -1,6 +1,16 @@
 import * as React from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import './assets/css/index.scss';
+
+import thesis_img1 from './assets/image/thesis-img1.png';
+import thesis_img2_1 from './assets/image/thesis-img2-1.png';
+import thesis_img2_2 from './assets/image/thesis-img2-2.png';
+import thesis_img2_3 from './assets/image/thesis-img2-3.png';
+import thesis_img2_4 from './assets/image/thesis-img2-4.png';
+import thesis_img3_1 from './assets/image/thesis-img3-1.png';
+import thesis_img3_2 from './assets/image/thesis-img3-2.png';
+import thesis_img3_3 from './assets/image/thesis-img3-3.png';
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -173,6 +183,15 @@ const Section2 = () => {
             </motion.div>
           </div>
           <motion.div
+            className='section2-content-center'
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <div className='tag'> # 생명의 아름다움을 탐구하는 자세 </div>
+            <div className='tag'> # 올바른 성장, 따뜻한 나눔 </div>
+          </motion.div>
+          <motion.div
             className='section2-content-bot'
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -188,7 +207,8 @@ const Section2 = () => {
             <br/>
             이러한 생명 탐구의 자세는 우리에게 아름다움과 기쁨도 주지만,<br/>
             궁극적으로 의학 발전에 도움이 되고, 더 나은 미래의 편리함을 보여줍니다.<br/>
-            지속가능한 미래! 혼자가 아닌, 함께 그려나가고 싶습니다.
+            <br/>
+            <p className='accent'>지속가능한 미래! 혼자가 아닌, 함께 그려나가고 싶습니다.</p>
           </motion.div>
         </div>
         
@@ -309,11 +329,124 @@ const Section4 = () => {
 }
 
 const Section5 = () => {
+  const [current, setCurrent] = React.useState(1);
   return (
     <div className='section5-wrap'>
       <div className='section5'>
-        <div className='section5-content'>
-          
+        <div className='section5-top'>
+          <div className='section5-top1' >
+            Graduation Thesis
+          </div>
+          <div className='section5-top2' >
+            <p> 모유두세포와 모델 마우스를 통한 L-serine의 탈모 개선 효과 연구 </p>
+            <p> L-Serine accelerates hair regrowth by stimulating dermal papilla cells and activating hair follicle stem cells </p>
+          </div>
+        </div>
+        <div className='section5-bot'>
+          <div 
+            onClick={()=>{
+              if ( current !== 1 ) {
+                setCurrent(current - 1);
+              }
+            }} 
+            className={`arrow-left ${current == 1 ? 'disabled' : ''}`}
+          >
+            <p/>
+          </div>
+          <div className='section5-bot-content'>
+            <div className={`item ${current == 1 ? 'selected' : ''}`}>
+              <div className='box'>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img1} alt='thesis1'/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={`item ${current == 2 ? 'selected' : ''}`}>
+              <div className='box'>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img2_1} alt='thesis1'/>
+                  </div>
+                  <p className='desc'>
+                    Cell viability test
+                  </p>
+                </div>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img2_2} alt='thesis1'/>
+                  </div>
+                  <p className='desc'>
+                    Pyruvate kinase (PK) <br/>
+                    activity test
+                  </p>
+                </div>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img2_3} alt='thesis1'/>
+                  </div>
+                  <p className='desc'>
+                    Immunocytochemistry <br/>
+                    (ICC)
+                  </p>
+                </div>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img2_4} alt='thesis1'/>
+                  </div>
+                  <p className='desc'>
+                    Western blot
+                  </p>
+                </div>
+              </div>
+              <div className='desc'>
+                <p>Cell study에서는 모발 성장의 핵심 세포인 Dermal papilla cell(모유두세포)를 타겟으로 진행하였습니다.</p>
+                <p>인간의 primary dermal papilla cell을 사용하였고, L-serine을 처리 시에 세포의 생존율과 PK 활성 등을 평가하였습니다.</p>
+                <p>모유두세포의 활성 마커인 Versican의 활성을 평가하기 위해 ICC와 Western blot을 수행하였습니다.</p>
+              </div>
+            </div>
+            <div className={`item ${current == 3 ? 'selected' : ''}`}>
+              <div className='box'>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img3_1} alt='thesis1'/>
+                  </div>
+                </div>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img3_2} alt='thesis1'/>
+                  </div>
+                  <p className='desc'>
+                    Ex vivo vibrissa culture
+                  </p>
+                </div>
+                <div className='img-box-wrap'>
+                  <div className='img-box'>
+                    <img src={thesis_img3_3} alt='thesis1'/>
+                  </div>
+                  <p className='desc'>
+                    Immunohistochemistry <br/>
+                    (IHC)
+                  </p>
+                </div>
+              </div>
+              <div className='desc'>
+                <p>
+                  L-serine의 모발 길이 성장 효과를 보기 위해 마우스의 vibrissa를 분리하여 L-serine이 담긴 media에 ex vivo culture 하였고, <br/>
+                  vibrissa 길이 성장에 대한 L-serine의 효능을 평가하였습니다.
+                </p>
+                <p>모유두세포의 활성 마커인 Versican의 활성을 평가하기 위해 culture한 vibrissa를 harvest하여 IHC를 수행하였습니다.</p>
+              </div>
+            </div>
+          </div>
+          <div onClick={()=>{
+            if ( current !== 3 ) {
+              setCurrent(current + 1);
+            }
+          }} className={`arrow-right ${current == 3 ? 'disabled' : ''}`}>
+            <p/>
+          </div>
         </div>
       </div>
     </div>
@@ -324,7 +457,33 @@ const Section6 = () => {
   return (
     <div className='section6-wrap'>
       <div className='section6'>
-
+        <motion.div 
+          className='section6-content'
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <p>Let’s Work Together</p>
+          <p>생명공학의 발전, 지속 가능한 삶이 함께하는 미래를 꿈꿉니다.</p>
+        </motion.div>
+        <motion.div 
+          className='section6-link'
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1}}
+        >
+          <a href='/' target='_blank'>
+            <div className='button'>
+              <p>WITH</p>
+              <div className='logo'>
+                <span className='logo-k'/>
+                <span className='logo-g'/>
+                <span className='logo-u'/>
+              </div>
+              <div className='arrow'/>
+            </div>
+          </a>
+        </motion.div>
       </div>
     </div>
   )
