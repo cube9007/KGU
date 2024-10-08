@@ -71,6 +71,10 @@ body {
   width: 51px;
   height: 58px;
   background-color: rgb(56, 72, 111);
+  mask-image: url("/logo-k.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: 0 0;
   -webkit-mask-image: url("/logo-k.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -83,6 +87,10 @@ body {
   width: 53px;
   height: 60px;
   background-color: rgb(56, 72, 111);
+  mask-image: url("/logo-g.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: 0 0;
   -webkit-mask-image: url("/logo-g.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
@@ -95,6 +103,10 @@ body {
   width: 49px;
   height: 59px;
   background-color: rgba(56, 72, 111, 0.5);
+  mask-image: url("/logo-u.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: 0 0;
   -webkit-mask-image: url("/logo-u.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;

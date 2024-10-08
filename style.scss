@@ -5,6 +5,10 @@ $primary_dark : rgb(56,72,111);
 $primary_dark50 : rgb(56,72,111, 0.5);
 
 @mixin mask($img) {
+  mask-image: url("/" + $img);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: 0 0;
   -webkit-mask-image: url("/" + $img);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
