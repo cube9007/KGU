@@ -50,7 +50,7 @@ const MainBanner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            The Future with
+            A Future <div className='sm-break'/> Where  We Live
           </motion.div>
           <motion.div 
             className='main-banner-title-top-2'
@@ -58,7 +58,7 @@ const MainBanner = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5}}
           >
-            Sustainable Life
+            Healthier <div className='sm-break'/> and Happier
           </motion.div>
         </div>
         <motion.div 
@@ -94,8 +94,8 @@ const Section1 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            KGU는 생명공학기술의 <br/>
-            지속가능한 미래를 위해 연구합니다.
+            KGU는 모든 사람의 <br/>
+            더 나은 건강과 행복을 위해 연구합니다.
           </motion.div>
         </div>
         <div className='section1-bot'>
@@ -107,11 +107,11 @@ const Section1 = () => {
           >
             <span className='img'/>
             <div>
-              <div>자연 친화력</div>
+              <div>치유 중심 연구</div>
               <div>
-                생물체의 성격 파악 <br/>
-                새로운 약과 줄기세포 제품 <br/>
-                기술 개발합니다.
+                인류 건강과 복지 증진에 <br/>
+                기여하는 것을 <br/>
+                목표로 합니다.
               </div>
             </div>
           </motion.div>
@@ -123,11 +123,11 @@ const Section1 = () => {
           >
             <span className='img'/>
             <div>
-              <div>수리 논리력</div>
+              <div>문제 해결</div>
               <div>
-                논리적인 구조 판단 <br/>
-                짜임새 있는 논리를 <br/>
-                도출하기 위해 추론합니다.
+                도전적인 과제 속에서도 <br/>
+                창의적인 접근으로 <br/>
+                문제를 해결합니다.
               </div>
             </div>
           </motion.div>
@@ -139,11 +139,11 @@ const Section1 = () => {
           >
             <span className='img'/>
             <div>
-              <div>사색 탐구형</div>
+              <div>커뮤니케이션</div>
               <div>
-                생각과 집중적 성향 <br/>
-                호기심이 많고 <br/>
-                내용을 깊이 이해합니다.
+                팀 내에 협업과 연구 성과를 <br/>
+                분명하게 이해하고 <br/>
+                명확하게 전달합니다.
               </div>
             </div>
           </motion.div>
@@ -181,7 +181,7 @@ const Section2 = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              생명의 아름다움을 전하는 연구원 <br/>
+              인류의 건강과 <div className='sm-break'/> 행복을 소망하는 연구원 <br/>
               <span>김건욱</span>입니다.
             </motion.div>
           </div>
@@ -191,8 +191,8 @@ const Section2 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className='tag'> # 생명의 아름다움을 탐구하는 자세 </div>
-            <div className='tag'> # 올바른 성장, 따뜻한 나눔 </div>
+            <div className='tag'> # 인류를 위한 치유 </div>
+            <div className='tag'> # 희망을 전하는 연구원 </div>
           </motion.div>
           <motion.div
             className='section2-content-bot'
@@ -200,18 +200,21 @@ const Section2 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            예술과 자연 그리고 생명은 하나라고 생각합니다. <br/>
-            예술이란 생명체가 느끼는 아름다움이고, <div className='sm-break'> </div> 그러한 예술에 아름다움을 느끼는 이유는<br/>
-            생명이 갖는 고유의 성격이 <div className='sm-break'> </div> 예술에도 반영되었기 때문입니다.<br/>
+            인류가 더 건강하고 행복한 삶을 누릴 수 있도록. <br/>
+            치유의 길을 찾아가는 바이오 연구자입니다. <br/>
             <br/>
-            저는 생명을 탐구하는 것 자체가 예술이고, <div className='sm-break'> </div> 인간이 즐길 수 있는 큰 재미라고 생각합니다.<br/>
-            인간은 생명이란 큰 범주 안에 드는 <div className='sm-break'> </div> 하나의 존재이기에,<br/>
-            다른 생명을 탐구하고 그 존재에 대해 의문과 <div className='sm-break'> </div> 논리적인 사색을 갖을 수 있습니다.<br/>
+            작은 생명의 신비에서 출발한 제 연구는 <br/>
+            더 나은 내일을 위한 소망으로 이어지고,<br/>
+            질병과 고통에서 벗어난 세상을 꿈꾸게 합니다.<br/>
             <br/>
-            이러한 생명 탐구의 자세는 <div className='sm-break'> </div> 우리에게 아름다움과 기쁨도 주지만,<br/>
-            궁극적으로 의학 발전에 도움이 되고,<div className='sm-break'> </div> 더 나은 미래의 편리함을 보여줍니다.<br/>
+            단순한 치료를 넘어 <div className='sm-break'> </div> 사람들의 삶에 회복과 희망을  <div className='sm-break'> </div>  전하는 것을 목표로<br/>
+            매 순간 진심을 담아 <div className='sm-break'> </div> 연구에 임하고 있습니다.<br/>
             <br/>
-            <div className='accent'>지속가능한 미래! <div className='sm-break'> </div>혼자가 아닌, 함께 그려나가고 싶습니다.</div>
+            <br/>
+            과학이라는 도구로 인류에게 <div className='sm-break'> </div> 치유의 빛을 비추고<br/>
+            모두가 건강하고 풍요로운 삶을 <div className='sm-break'> </div> 누릴 수 있는 세상을 향해 나아가고자 합니다.<br/>
+            <br/>
+            <div className='accent'>연구를 통해! <div className='sm-break'> </div>건강과 행복을 꽃피우겠습니다!</div>
           </motion.div>
         </div>
         
@@ -228,12 +231,12 @@ const Section3 = () => {
           <div className='title'>Graduation</div>
           <div className='contents'>
             <div className='item'>
-              <div>2021</div>
-              <div>연세대학교 미래캠퍼스 <div className='sm-break'> </div> 생명과학과 학사 졸업</div>
-            </div>
-            <div className='item'>
               <div>2023</div>
               <div>연세대학교 신촌캠퍼스 <div className='sm-break'> </div> 생명공학과 석사 졸업</div>
+            </div>
+            <div className='item'>
+              <div>2021</div>
+              <div>연세대학교 미래캠퍼스 <div className='sm-break'> </div> 생명과학과 학사 졸업</div>
             </div>
           </div>
         </div>
@@ -282,24 +285,39 @@ const Section3 = () => {
           <div className='title'>Papers</div>
           <div className='contents'>
             <div className='item'>
-              <div>BMB reports</div>
-              <div>Wnt/β-catenin signaling activator restores hair regeneration suppressed by diabetes mellitus </div>
-            </div>
-            <div className='item'>
-              <div>Pharmaceutics</div>
-              <div>Pyruvate Kinase M2 Promotes Hair Regeneration by Connecting Metabolic and Wnt/β-Catenin Signaling </div>
-            </div>
-            <div className='item'>
-              <div>Cells</div>
+              <div>
+                <p> Cells </p>
+                <p>2023-02</p>  
+              </div>
               <div>CXXC5 Mediates DHT-Induced Androgenetic Alopecia via PGD2 </div>
             </div>
             <div className='item'>
-              <div>International Journal <br/> of Molecular Sciences</div>
+              <div>
+                <p>Pharmaceutics</p>
+                <p>2023-07</p>
+              </div>
+              <div>Pyruvate kinase M2 Accelerates Cutaneous Wound Healing via Glycolysis and Wnt/β-Catenin Signaling </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>International Journal <br/> of Molecular Sciences</p>
+                <p>2023-07</p>
+              </div>
               <div>KY19382 Accelerates Cutaneous Wound Healing via Activation of the Wnt/β-Catenin Signaling Pathway </div>
             </div>
             <div className='item'>
-              <div>Pharmaceutics</div>
-              <div>Pyruvate kinase M2 Accelerates Cutaneous Wound Healing via Glycolysis and Wnt/β-Catenin Signaling </div>
+              <div>
+                <p>Pharmaceutics</p>
+                <p>2023-02</p>
+              </div>
+              <div>Pyruvate Kinase M2 Promotes Hair Regeneration by Connecting Metabolic and Wnt/β-Catenin Signaling </div>
+            </div>
+            <div className='item'>
+              <div>
+                <p>BMB reports </p>
+                <p>2022-12</p>
+              </div>
+              <div>Wnt/β-catenin signaling activator restores hair regeneration suppressed by diabetes mellitus </div>
             </div>
           </div>
         </div>
@@ -470,7 +488,7 @@ const Section6 = () => {
           transition={{ duration: 1 }}
         >
           <div>Let’s Work Together</div>
-          <div>생명공학의 발전, 지속 가능한 삶이 <div className='sm-break'> </div> 함께하는 미래를 꿈꿉니다.</div>
+          <div>치유의 새로운 길, 건강한 삶이 <div className='sm-break'> </div> 함께하는 미래를 꿈꿉니다.</div>
         </motion.div>
         <motion.div 
           className='section6-link'
@@ -478,7 +496,7 @@ const Section6 = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1}}
         >
-          <a href='/' target='_blank'>
+          <a rel="noopener noreferrer" href='https://open.kakao.com/o/sB9n62Ug' target='_blank'>
             <div className='button'>
               <div>WITH</div>
               <div className='logo'>
