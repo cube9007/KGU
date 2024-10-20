@@ -67,7 +67,7 @@ const MainBanner = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1}}
         >
-          <div>생명공학의 발전, 지속 가능한 삶이&nbsp;</div>
+          <div>치유의 새로운 길, 건강한 삶이 &nbsp;</div>
           <div>함께하는 미래를 꿈꿉니다.</div>
         </motion.div>
       </div>
